@@ -6,10 +6,7 @@ window7用户开始->运行->输入CMD
 window8/10用户 WIN+x 选择管理员模式进入CMD
 
 执行以下命令：
-int main(int argc, char **argv)
-{
-	printf("Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1");
-	return 0;
-}
+
+`Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1`
 
 这样就不用添加系统时间补丁。
